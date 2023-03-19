@@ -1,7 +1,7 @@
 # Strong Password Generator
 This is a simple password generator written in Python that can create strong passwords with different combinations of upper and lowercase letters, numbers, and symbols.
 
-How to use
+# How to use
 Clone the repository to your local machine:
 bash
 Copy code
@@ -13,7 +13,7 @@ Follow the prompts to select the desired length and type of characters for your 
 
 The program will generate a password and display it on the screen. You can copy and paste it as needed.
 
-Contributing
+# Contributing
 Contributions to this project are welcome and encouraged! If you would like to contribute, please follow these steps:
 
 Fork the repository to your own GitHub account.
@@ -38,6 +38,6 @@ Create a pull request to the main repository and describe your changes.
 
 Wait for the project owner to review and merge your changes.
 
-License
+# License
 This project is licensed under the MIT License. See the LICENSE file for more information.
 

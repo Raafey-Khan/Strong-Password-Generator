@@ -1,0 +1,35 @@
+import secrets 
+                     # importing the essential modules
+import string  
+
+
+letters = string.ascii_letters  #generaring letters through string module
+
+digits = string.digits          #accessing digit which is attribute of string
+
+special_chars = string.punctuation
+
+alphabet = letters + digits + special_chars  # adding all the stuffs together for making strong password
+
+pwd_length = 8   #selecting length
+
+pwd = ''  #using upper commas to join the neccessary alphabets and digits
+
+for i in range(pwd_length):     #looping through it till the pwd_lenght range
+    pwd +=''.join(secrets.choice(alphabet))    #joining using secrets module attributes plus adding the alphabet variable which we had created further
+
+
+
+
+while True:    # again using loop to add more alphabets 
+    pwd = ''
+
+    for i in range(pwd_length):
+        pwd +=''.join(secrets.choice(alphabet))
+
+    if(any(char in special_chars for char in pwd)and  # addition of the digits should more than 2
+        sum(char in digits for char in pwd)>=2):
+            break
+print("")
+print("Here is your pasword:",pwd)   #Everytime it gives you the random passwords
+print(" ")
